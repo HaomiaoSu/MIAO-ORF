@@ -32,6 +32,11 @@ dependencies = [
   "scipy>=1.10,<2",
 ]
 
+[project.optional-dependencies]
+test = [
+  "tomli>=2; python_version < '3.11'",
+]
+
 [project.urls]
 Repository = "https://github.com/HaomiaoSu/MIAO-ORF"
 Documentation = "https://github.com/HaomiaoSu/MIAO-ORF/tree/main/docs"

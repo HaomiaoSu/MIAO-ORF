@@ -10,6 +10,11 @@ authors:
     given-names: "Haomiao"
     email: "suhaomiao@csu.edu.cn"
     affiliation: "Molecular Biology Research Center, School of Life Sciences, Hunan Province Key Laboratory of Basic and Applied Hematology, Central South University, Hunan, China"
+    orcid: "https://orcid.org/0000-0001-6232-6725"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.22291939"
+    description: "Archived release of MIAO-ORF v1.0.0"
 repository-code: "https://github.com/HaomiaoSu/MIAO-ORF"
 url: "https://github.com/HaomiaoSu/MIAO-ORF"
 license: MIT

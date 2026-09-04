@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-#suhaomiao@gmail.com
+# Contact: suhaomiao@csu.edu.cn
 
 """
 Multiprocessing P-site caller (Ribo-seq, MD required)

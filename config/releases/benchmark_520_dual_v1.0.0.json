@@ -1,0 +1,80 @@
+{
+  "release_id": "miao-orf-1.0.0-benchmark-520-dual",
+  "software_version": "1.0.0",
+  "output_schema_version": "1.0",
+  "statistical_engine_id": "dm-formal-adaptive-importance-v1",
+  "benchmark_certification_id": "benchmark-520-dual-20260813",
+  "release_source": {
+    "caller": "src/miao_orf/ribo_intorf_dm_caller.py",
+    "caller_sha256": "44a87c4a2776c033c4947d290504c736f0bde5870340845daf6eaba3ace52f70",
+    "benchmark_certified_caller_sha256": "8dfc06db6109f4eb8a354eeefac1fa6a918a016b7141333706b06627048638b4",
+    "benchmark_command": "archived manuscript reproducibility workflow: run_spikein_fast_accurate_benchmark.sh",
+    "benchmark_command_sha256": "ae5c40712b3e1200ff122d0154fdedf94d645d6d6ca35772b19c355c8bfa1f85"
+  },
+  "certification_scope": {
+    "sample": "ES-Ribo-Rep1",
+    "truth_pairs": 520,
+    "backgrounds": [
+      "original_background",
+      "clean_background"
+    ],
+    "truth_sha256": "61466781599752e9c5214775cf38cf77b635ce46d3abff43a6fa4d4c71f34ea4",
+    "original_result_sha256": "364a2f844ec9fec174107c9b44c70d557b17e8226414a3b5e63a100741dba74e",
+    "clean_result_sha256": "7efbafde1f6bdfe3b8429cb18b1a0be08a584c78056b0fe96703375a0bb8af4a"
+  },
+  "formal_parameters": {
+    "pi_method": "codon_equal",
+    "min_a0": 1.0,
+    "min_intorf_aa": 6,
+    "primary_min_intorf_aa": 10,
+    "min_core_codons": 5,
+    "min_active_core_codons": 3,
+    "min_core_reads": 15,
+    "min_credible_active_core_codons": 5,
+    "min_credible_active_core_frac": 0.15,
+    "min_credible_target_residual_frac": 0.3333333333333333,
+    "exclude_start_codons": 1,
+    "exclude_stop_codons": 1,
+    "bootstrap_gate_p": 0.2,
+    "bootstrap_reps": 999,
+    "bootstrap_engine": "adaptive_importance",
+    "importance_mode": "accurate",
+    "importance_reps": 9999,
+    "importance_iid_exceedance_threshold": 10,
+    "importance_etas": [0.0, 0.05, 0.1, 0.2, 0.4, 0.7, 1.0],
+    "importance_min_tail_ess": 30,
+    "importance_max_relative_se": 0.25,
+    "disable_block_bootstrap": true,
+    "fdr_threshold": 0.05,
+    "lambda_min": 0.05,
+    "template_separation_min": 0.05,
+    "lambda_grid_size": 101,
+    "lambda_abs_diff_max": 0.1,
+    "lambda_rel_diff_max": 0.3,
+    "lambda_rel_eps": 0.01,
+    "distance_to_segment_max": 0.1,
+    "review_gate_window": 0.05,
+    "candidate_dedup": "gorf",
+    "require_gorf_id": true,
+    "member_preview_n": 20
+  },
+  "default_call_contract": {
+    "fdr_family_policy": "separate_primary_and_ultra_short_exploratory",
+    "primary_call": "q_BH < 0.05 plus lambda, direction, mixture geometry, active-core breadth, and target-residual breadth gates",
+    "benchmark_join": "truth (gorf_id, overlap_type) == DM (gorf_id, overlap_type)",
+    "benchmark_primary_score": "gate-aware -log10(p_final)",
+    "lambda_interpretation": "fitted intORF-like fraction of analyzed overlap-core P-sites"
+  },
+  "formal_outputs": [
+    "<out>.template.tsv",
+    "<out>.intorf_dm_results.tsv",
+    "<out>.summary.tsv",
+    "<out>.prefilter_summary.tsv",
+    "<out>.run_manifest.json"
+  ],
+  "development_history": {
+    "unpublished_labels": ["1.2.0", "1.3.0"],
+    "status": "internal development snapshots; never public releases"
+  },
+  "compatibility_note": "Public version 1.0.0 retains the benchmark-certified statistical engine and call gates. The public caller hash differs from the archived benchmark-certified caller through release branding and a reporting-only fix that records fixed-mode importance draw counts; statistical estimates and call gates are unchanged. Reporting and provenance fields are part of the initial public schema."
+}

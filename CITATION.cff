@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "If you use MIAO, please cite this software and its associated publication."
+title: "MIAO: Mixture-aware Inference of Alternative-frame ORFs"
+type: software
+version: 1.0.0
+date-released: 2026-09-04
+abstract: "MIAO detects translated alternative-frame internal ORFs from Ribo-seq data using codon-level Dirichlet-multinomial mixture inference."
+authors:
+  - family-names: "Su"
+    given-names: "Haomiao"
+    email: "suhaomiao@csu.edu.cn"
+    affiliation: "Molecular Biology Research Center, School of Life Sciences, Hunan Province Key Laboratory of Basic and Applied Hematology, Central South University"
+repository-code: "https://github.com/HaomiaoSu/MIAO-ORF"
+url: "https://github.com/HaomiaoSu/MIAO-ORF"
+license: MIT

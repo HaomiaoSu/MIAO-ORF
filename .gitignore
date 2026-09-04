@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+build/
+dist/
+*.egg-info/
+
+# Editors and operating systems
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Local configuration
+config/config.yaml
+.env
+
+# Data and generated outputs
+data/
+results/
+output/
+out/
+tmp/
+*.bam
+*.bai
+*.bed
+*.bedGraph
+*.gtf
+*.gtf.gz
+*.fa
+*.fasta
+*.fai
+*.faa
+*.tsv
+*.csv
+*.pdf
+*.png
+
+# Small, versioned input templates
+!examples/configs/*.tsv

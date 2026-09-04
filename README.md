@@ -111,7 +111,7 @@ The estimated λ is the fitted intORF-like fraction of analyzed overlap-core P-s
 
 ## Citation
 
-Citation metadata are provided in [`CITATION.cff`](CITATION.cff). Please cite both the software release and the associated MIAO publication when available.
+Citation metadata are provided in [`CITATION.cff`](CITATION.cff). The archived v1.0.0 release is available from Zenodo: [https://doi.org/10.5281/zenodo.22291939](https://doi.org/10.5281/zenodo.22291939). Please cite both the software release and the associated MIAO publication when available.
 
 ## License
 
@@ -119,4 +119,4 @@ MIAO-ORF is released under the MIT License. See [`LICENSE`](LICENSE).
 
 ## Author
 
-Haomiao Su — Molecular Biology Research Center, School of Life Sciences, Hunan Province Key Laboratory of Basic and Applied Hematology, Central South University, Hunan, China. Contact: `suhaomiao@csu.edu.cn`.
+Haomiao Su ([ORCID 0000-0001-6232-6725](https://orcid.org/0000-0001-6232-6725)) — Molecular Biology Research Center, School of Life Sciences, Hunan Province Key Laboratory of Basic and Applied Hematology, Central South University, Hunan, China. Contact: `suhaomiao@csu.edu.cn`.

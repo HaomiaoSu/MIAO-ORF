@@ -41,6 +41,7 @@ test = [
 Repository = "https://github.com/HaomiaoSu/MIAO-ORF"
 Documentation = "https://github.com/HaomiaoSu/MIAO-ORF/tree/main/docs"
 Issues = "https://github.com/HaomiaoSu/MIAO-ORF/issues"
+Archive = "https://doi.org/10.5281/zenodo.22291939"
 
 [project.scripts]
 "miao-orf" = "miao_orf.launcher:main"
